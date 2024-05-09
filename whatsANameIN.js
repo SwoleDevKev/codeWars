@@ -8,3 +8,14 @@ The function should return true if that is the case, and else false. Letter comp
 */
 // answer
 
+function nameInStr(str, name){
+    let currentLetter = 0
+    
+    for (let i=0; i < str.length && currentLetter < name.length; i++){
+      if (str[i].toLowerCase() === name[currentLetter].toLowerCase() ){
+        currentLetter++
+      }
+    }
+     return currentLetter == name.length ? true : false
+    }
+
